@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+  <!--  <include
+        android:id="@+id/layout"
+        layout="@layout/sv_slide_view"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+
+       />-->
+    <com.example.slideview.SlideView
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/slideView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:sv_slideText="Slide to Unlock"
+        app:sv_buttonImage="@drawable/send_money_small"
+        app:sv_buttonBackgroundColor="@color/white"
+        app:sv_slideBackgroundColor="@android:color/holo_green_light"
+        app:sv_animateSlideText="true"
+        app:sv_reverseSlide="false" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
